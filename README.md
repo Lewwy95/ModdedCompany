@@ -19,13 +19,13 @@ The latest shortcut can be added to Steam and then right click it in your librar
 Under "Target" paste the following (change the initial path depending on where your game is installed):
 
 ```
-"C:\Program Files (x86)\Steam\steamapps\common\Lethal Company\BHML\ModdedCompany.bat"
+"C:\Program Files (x86)\Steam\steamapps\common\Lethal Company\ModdedCompany\ModdedCompany.bat"
 ```
 
 Under "Start In" paste the following (change the initial path depending on where your game is installed):
 
 ```
-"C:\Program Files (x86)\Steam\steamapps\common\Lethal Company\BHML"
+"C:\Program Files (x86)\Steam\steamapps\common\Lethal Company\ModdedCompany"
 ```
 
 Click the icon to change it to whatever you want. It will use the same image as the base game if you select the Lethal Company game executable.
