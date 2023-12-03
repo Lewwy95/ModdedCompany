@@ -117,13 +117,14 @@ echo - LateGame Upgrades>> modlist.txt
 echo - LBtoKG>> modlist.txt
 echo - LCUltrawide>> modlist.txt
 echo - LethalRebinding>> modlist.txt
+echo - MetalRecharging>> modlist.txt
 echo - MoreBlood>> modlist.txt
 echo - MoreCompany>> modlist.txt
-echo - QuickRestart>> modlist.txt
 echo - ScrollInverter>> modlist.txt
 echo - ShipClock>> modlist.txt
 echo - ShipLoot>> modlist.txt
 echo - SkipToMultiplayerMenu>> modlist.txt
+echo - QuickRestart>> modlist.txt
 cls
 
 :: Clear 'Temp' Folder
