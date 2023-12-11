@@ -56,6 +56,11 @@ echo Extracting latest revision...
 powershell -c "Expand-Archive '%~dp0\bin\Temp\ModdedCompany-main.zip' -Force '%~dp0\bin\Temp'"
 cls
 
+:: Clear Mods Folder
+echo Clearing mods folder...
+del /s /q "%~dp0\bin\Mods\*"
+cls
+
 :: Deploy Latest Revision
 echo Deploying latest revision...
 xcopy /s /y "%~dp0\bin\Temp\ModdedCompany-main" "%~dp0"
@@ -117,7 +122,6 @@ echo - LateGame Upgrades>> modlist.txt
 echo - LBtoKG>> modlist.txt
 echo - LCUltrawide>> modlist.txt
 echo - LethalRebinding>> modlist.txt
-echo - MetalRecharging>> modlist.txt
 echo - MoreBlood>> modlist.txt
 echo - MoreCompany>> modlist.txt
 echo - ScrollInverter>> modlist.txt
