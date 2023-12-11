@@ -121,7 +121,6 @@ echo - LateCompany>> modlist.txt
 echo - LateGame Upgrades>> modlist.txt
 echo - LBtoKG>> modlist.txt
 echo - LCUltrawide>> modlist.txt
-echo - LethalRebinding>> modlist.txt
 echo - MoreBlood>> modlist.txt
 echo - MoreCompany>> modlist.txt
 echo - ScrollInverter>> modlist.txt
