@@ -92,6 +92,8 @@ if not exist "%~dp0..\BepInEx" (
     xcopy /s /y "%~dp0\bin\Mods\Dependencies\*" "%~dp0..\BepInEx\core\"
     copy "%~dp0\bin\Temp\BepInEx\doorstop_config.ini" "%~dp0..\"
     copy "%~dp0\bin\Temp\BepInEx\winhttp.dll" "%~dp0..\"
+    del /s /q "%~dp0..\BepInEx\plugins\Dependencies\*"
+    rmdir /s /q "%~dp0..\BepInEx\plugins\Dependencies"
 )
 cls
 
