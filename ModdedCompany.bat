@@ -82,11 +82,14 @@ if not exist "%~dp0..\BepInEx" (
     mkdir "%~dp0..\BepInEx\core"
     mkdir "%~dp0..\BepInEx\plugins"
     mkdir "%~dp0..\BepInEx\plugins\resAdditionalSuits"
+    mkdir "%~dp0..\BepInEx\plugins\HDLethalCompany"
     powershell -c "Expand-Archive '%~dp0\bin\Mods\BepInEx.zip' -Force '%~dp0\bin\Temp'"
     xcopy /s /y "%~dp0\bin\Temp\BepInEx\BepInEx\*" "%~dp0..\BepInEx"
     xcopy /s /y "%~dp0\bin\Configs\*" "%~dp0..\BepInEx\config"
     xcopy /s /y "%~dp0\bin\Mods\*.dll" "%~dp0..\BepInEx\plugins"
     xcopy /s /y "%~dp0\bin\Mods\resAdditionalSuits\*" "%~dp0..\BepInEx\plugins\resAdditionalSuits\"
+    xcopy /s /y "%~dp0\bin\Mods\HDLethalCompany\*" "%~dp0..\BepInEx\plugins\HDLethalCompany\"
+    xcopy /s /y "%~dp0\bin\Mods\Dependencies\*" "%~dp0..\BepInEx\core\"
     copy "%~dp0\bin\Temp\BepInEx\doorstop_config.ini" "%~dp0..\"
     copy "%~dp0\bin\Temp\BepInEx\winhttp.dll" "%~dp0..\"
 )
@@ -112,21 +115,22 @@ cls
 :: Create Text File With Mods
 if exist "%~dp0\modlist.txt" del /s /q "%~dp0\modlist.txt"
 echo Creating mods text file...
+echo - Additional Content Framework> modlist.txt
 echo - Additional Suits> modlist.txt
 echo - AlwaysHearActiveWalkies>> modlist.txt
 echo - HDLethalCompany>> modlist.txt
 echo - HideChat>> modlist.txt
+echo - IntroTweaks>> modlist.txt
 echo - ItemQuickSwitch>> modlist.txt
 echo - LateCompany>> modlist.txt
-echo - LateGame Upgrades>> modlist.txt
 echo - LBtoKG>> modlist.txt
 echo - LCUltrawide>> modlist.txt
+echo - Mirage>> modlist.txt
 echo - MoreBlood>> modlist.txt
 echo - MoreCompany>> modlist.txt
 echo - ScrollInverter>> modlist.txt
 echo - ShipClock>> modlist.txt
 echo - ShipLoot>> modlist.txt
-echo - SkipToMultiplayerMenu>> modlist.txt
 echo - QuickRestart>> modlist.txt
 cls
 
