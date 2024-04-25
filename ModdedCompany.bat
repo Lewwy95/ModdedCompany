@@ -108,13 +108,16 @@ del /s /q "%~dp0\resChecker.txt"
 del /s /q "%~dp0..\BepInEx\config\LCUltrawide.cfg"
 ren "%~dp0..\BepInEx\config\LCUltrawide_wide.cfg" "LCUltrawide.cfg"
 cls
+goto modlist
 
 :: No Wide Install
+:nowide
 del /s /q "%~dp0\resChecker.txt"
 del /s /q "%~dp0..\BepInEx\config\LCUltrawide_wide.cfg"
 cls
 
 :: Create Text File With Mods
+:modlist
 if exist "%~dp0\modlist.txt" del /s /q "%~dp0\modlist.txt"
 echo Creating mods text file...
 echo - Additional Content Framework> modlist.txt
