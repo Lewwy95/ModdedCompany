@@ -80,6 +80,7 @@ if not exist "%~dp0..\BepInEx" (
     mkdir "%~dp0..\BepInEx"
     mkdir "%~dp0..\BepInEx\config"
     mkdir "%~dp0..\BepInEx\core"
+    mkdir "%~dp0..\BepInEx\patchers"
     mkdir "%~dp0..\BepInEx\plugins"
     mkdir "%~dp0..\BepInEx\plugins\resAdditionalSuits"
     mkdir "%~dp0..\BepInEx\plugins\HDLethalCompany"
@@ -89,7 +90,8 @@ if not exist "%~dp0..\BepInEx" (
     xcopy /s /y "%~dp0\bin\Mods\*.dll" "%~dp0..\BepInEx\plugins"
     xcopy /s /y "%~dp0\bin\Mods\resAdditionalSuits\*" "%~dp0..\BepInEx\plugins\resAdditionalSuits\"
     xcopy /s /y "%~dp0\bin\Mods\HDLethalCompany\*" "%~dp0..\BepInEx\plugins\HDLethalCompany\"
-    xcopy /s /y "%~dp0\bin\Mods\Dependencies\*" "%~dp0..\BepInEx\core\"
+    xcopy /s /y "%~dp0\bin\Mods\Dependencies\Core\*" "%~dp0..\BepInEx\core\"
+    xcopy /s /y "%~dp0\bin\Mods\Dependencies\Patchers\*" "%~dp0..\BepInEx\patchers\"
     copy "%~dp0\bin\Temp\BepInEx\doorstop_config.ini" "%~dp0..\"
     copy "%~dp0\bin\Temp\BepInEx\winhttp.dll" "%~dp0..\"
     del /s /q "%~dp0..\BepInEx\plugins\Dependencies\*"
@@ -123,6 +125,7 @@ echo Creating mods text file...
 echo - Additional Content Framework> modlist.txt
 echo - Additional Suits> modlist.txt
 echo - AlwaysHearActiveWalkies>> modlist.txt
+echo - CustomDeathPenalty>> modlist.txt
 echo - HDLethalCompany>> modlist.txt
 echo - HideChat>> modlist.txt
 echo - IntroTweaks>> modlist.txt
