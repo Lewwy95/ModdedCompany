@@ -1,0 +1,81 @@
+{
+    "condition": {
+            "type": "config",
+            "config": "EnabledSounds:old_bird"
+        },
+        "randomness": {
+            "type": "determinstic"
+        },
+    "replacements": [
+            {
+
+                "matches": "*:LRADAlarm3",
+                "sounds": [
+                    {
+                        "sound": "Old Bird/L R A D Alarm3.ogg"
+                    }
+                ]
+            },
+            {
+                "matches": [
+                "3DLradAudio2:LradBrainwashingSignal1",
+                "3DLradAudio2:LradBrainwashingSignal4",
+                "3DLradAudio2:LradBrainwashingSignal6",
+                "3DLradAudio2:LradBrainwashingSignal7",
+                "3DLradAudio2:LradBrainwashingSignal8"
+                ],
+                "sounds": [
+                    {
+                        "sound": "Old Bird/Lrad Brainwashing Signal7.ogg",
+                        "weight": 1
+                    },
+                    {
+                        "sound": "Old Bird/Lrad Brainwashing Signal6.ogg",
+                        "weight": 1
+                    }
+                ]
+            },
+            {
+                "matches": "*:RadMechAmbientSFX",
+                "sounds": [
+                    {
+                        "sound": "Old Bird/Rad Mech Ambient S F X.ogg"
+                    }
+                ]
+            },
+            {
+                "matches": [
+                    "*:RadMechStomp1",
+                    "*:RadMechStomp2",
+                    "*:RadMechStomp3",
+                    "*:RadMechStomp4"
+                ],
+                "sounds": [
+                    {
+                        "sound": "Old Bird/Rad Mech Stomp1.ogg",
+                        "weight": 1
+                    },
+                    {
+                        "sound": "Old Bird/Rad Mech Stomp2.ogg",
+                        "weight": 1
+                    },
+                    {
+                        "sound": "Old Bird/Rad Mech Stomp3.ogg",
+                        "weight": 1
+                    },
+                    {
+                        "sound": "Old Bird/Rad Mech Stomp4.ogg",
+                        "weight": 1
+                    }
+                ]
+            },
+            {
+                "matches": "*:RadMechWake",
+                "sounds": [
+                    {
+                        "sound": "Old Bird/Rad Mech Wake.ogg"
+                    }
+                ]
+            }
+        ]
+}

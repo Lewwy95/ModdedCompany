@@ -84,12 +84,16 @@ if not exist "%~dp0..\BepInEx" (
     mkdir "%~dp0..\BepInEx\plugins"
     mkdir "%~dp0..\BepInEx\plugins\resAdditionalSuits"
     mkdir "%~dp0..\BepInEx\plugins\HDLethalCompany"
+    mkdir "%~dp0..\BepInEx\plugins\LethalConfig"
+    mkdir "%~dp0..\BepInEx\plugins\LethalResonance"
     powershell -c "Expand-Archive '%~dp0\bin\Mods\BepInEx.zip' -Force '%~dp0\bin\Temp'"
     xcopy /s /y "%~dp0\bin\Temp\BepInEx\BepInEx\*" "%~dp0..\BepInEx"
     xcopy /s /y "%~dp0\bin\Configs\*" "%~dp0..\BepInEx\config"
     xcopy /s /y "%~dp0\bin\Mods\*.dll" "%~dp0..\BepInEx\plugins"
     xcopy /s /y "%~dp0\bin\Mods\resAdditionalSuits\*" "%~dp0..\BepInEx\plugins\resAdditionalSuits\"
     xcopy /s /y "%~dp0\bin\Mods\HDLethalCompany\*" "%~dp0..\BepInEx\plugins\HDLethalCompany\"
+    xcopy /s /y "%~dp0\bin\Mods\LethalConfig\*" "%~dp0..\BepInEx\plugins\LethalConfig\"
+    xcopy /s /y "%~dp0\bin\Mods\LethalResonance\*" "%~dp0..\BepInEx\plugins\LethalResonance\"
     xcopy /s /y "%~dp0\bin\Mods\Dependencies\Core\*" "%~dp0..\BepInEx\core\"
     xcopy /s /y "%~dp0\bin\Mods\Dependencies\Patchers\*" "%~dp0..\BepInEx\patchers\"
     copy "%~dp0\bin\Temp\BepInEx\doorstop_config.ini" "%~dp0..\"
@@ -131,6 +135,9 @@ echo - HideChat>> modlist.txt
 echo - IntroTweaks>> modlist.txt
 echo - ItemQuickSwitch>> modlist.txt
 echo - LateCompany>> modlist.txt
+echo - LethalConfig>> modlist.txt
+echo - LethalResonance>> modlist.txt
+echo - LetTheDeadRest>> modlist.txt
 echo - LBtoKG>> modlist.txt
 echo - LCUltrawide>> modlist.txt
 echo - Mirage>> modlist.txt

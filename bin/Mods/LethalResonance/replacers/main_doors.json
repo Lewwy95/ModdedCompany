@@ -1,0 +1,44 @@
+{
+"condition": {
+        "type": "config",
+        "config": "EnabledSounds:main_doors"
+    },
+    "randomness": {
+        "type": "determinstic"
+    },
+    "replacements": [
+        {
+            "matches": [
+                "EntranceTeleportA:MetalDoorShut1",
+                "EntranceTeleportB:MetalDoorShut1"
+            ],
+            "sounds": [
+                {
+                    "sound": "main_doors/MetalDoorShut1_01.ogg"
+                }
+            ]
+        },
+        {
+            "matches": [
+                "EntranceTeleportA:MetalDoorShut2",
+                "EntranceTeleportB:MetalDoorShut2"
+            ],
+            "sounds": [
+                {
+                    "sound": "main_doors/MetalDoorShut2_01.ogg"
+                }
+            ]
+        },
+        {
+            "matches": [
+                "EntranceTeleportB:MetalDoorShut11",
+                "EntranceTeleportA:MetalDoorShut11"
+            ],
+            "sounds": [
+                {
+                    "sound": "main_doors/MetalDoorShut11_01.ogg"
+                }
+            ]
+        }
+    ]
+}
