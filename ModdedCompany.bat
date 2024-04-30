@@ -126,16 +126,13 @@ cls
 :modlist
 if exist "%~dp0\modlist.txt" del /s /q "%~dp0\modlist.txt"
 echo Creating mods text file...
-echo - Additional Content Framework> modlist.txt
 echo - Additional Suits> modlist.txt
 echo - AlwaysHearActiveWalkies>> modlist.txt
 echo - CustomDeathPenalty>> modlist.txt
 echo - HDLethalCompany>> modlist.txt
 echo - HideChat>> modlist.txt
-echo - IntroTweaks>> modlist.txt
 echo - ItemQuickSwitch>> modlist.txt
 echo - LateCompany>> modlist.txt
-echo - LethalConfig>> modlist.txt
 echo - LethalResonance>> modlist.txt
 echo - LetTheDeadRest>> modlist.txt
 echo - LBtoKG>> modlist.txt
