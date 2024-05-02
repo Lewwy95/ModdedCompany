@@ -8,6 +8,12 @@ ModdedCompany provides the automation of installing and uninstalling quality of 
 
 ## Installation
 
+Extract the zip archive so the file structure looks like this:
+
+```
+C:\Program Files (x86)\Steam\steamapps\common\Lethal Company\ModdedCompany
+```
+
 Run the 'ModdedCompany.bat' file. This will check for mod installation and install them if required.
 
 You can add this file to Steam by right clicking the Lethal Company game executable and creating a shortcut.

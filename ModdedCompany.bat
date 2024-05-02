@@ -48,6 +48,11 @@ goto install
 :: Installation/Updater
 :install
 echo Downloading latest revision...
+echo.
+echo Don't worry - the bat file is working!
+echo I can't show a progress bar here because it makes it take longer (actually true).
+echo This may take a while due to large audio files being downloaded.
+echo.
 powershell -c "(New-Object System.Net.WebClient).DownloadFile('https://github.com/Lewwy95/ModdedCompany/archive/refs/heads/main.zip','%~dp0\bin\Temp\ModdedCompany-main.zip')"
 cls
 
