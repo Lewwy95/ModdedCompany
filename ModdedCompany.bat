@@ -64,6 +64,15 @@ cls
 :: Clear Mods Folder
 echo Clearing mods folder...
 del /s /q "%~dp0\bin\Mods\*"
+rmdir /s /q "%~dp0\bin\Mods"
+mkdir "%~dp0\bin\Mods"
+cls
+
+:: Clear Configs Folder
+echo Clearing configs folder...
+del /s /q "%~dp0\bin\Configs\*"
+rmdir /s /q "%~dp0\bin\Configs"
+mkdir "%~dp0\bin\Configs"
 cls
 
 :: Deploy Latest Revision
@@ -91,6 +100,10 @@ if not exist "%~dp0..\BepInEx" (
     mkdir "%~dp0..\BepInEx\plugins\HDLethalCompany"
     mkdir "%~dp0..\BepInEx\plugins\LethalConfig"
     mkdir "%~dp0..\BepInEx\plugins\LethalResonance"
+    mkdir "%~dp0..\BepInEx\plugins\LethalLib"
+    mkdir "%~dp0..\BepInEx\plugins\LethalModDataLib"
+    mkdir "%~dp0..\BepInEx\plugins\PsychSanctum"
+    mkdir "%~dp0..\BepInEx\plugins\DantorsMentalHospitalDunGen"
     powershell -c "Expand-Archive '%~dp0\bin\Mods\BepInEx.zip' -Force '%~dp0\bin\Temp'"
     xcopy /s /y "%~dp0\bin\Temp\BepInEx\BepInEx\*" "%~dp0..\BepInEx"
     xcopy /s /y "%~dp0\bin\Configs\*" "%~dp0..\BepInEx\config"
@@ -99,6 +112,10 @@ if not exist "%~dp0..\BepInEx" (
     xcopy /s /y "%~dp0\bin\Mods\HDLethalCompany\*" "%~dp0..\BepInEx\plugins\HDLethalCompany\"
     xcopy /s /y "%~dp0\bin\Mods\LethalConfig\*" "%~dp0..\BepInEx\plugins\LethalConfig\"
     xcopy /s /y "%~dp0\bin\Mods\LethalResonance\*" "%~dp0..\BepInEx\plugins\LethalResonance\"
+    xcopy /s /y "%~dp0\bin\Mods\LethalLib\*" "%~dp0..\BepInEx\plugins\LethalLib\"
+    xcopy /s /y "%~dp0\bin\Mods\LethalModDataLib\*" "%~dp0..\BepInEx\plugins\LethalModDataLib\"
+    xcopy /s /y "%~dp0\bin\Mods\PsychSanctum\*" "%~dp0..\BepInEx\plugins\PsychSanctum\"
+    xcopy /s /y "%~dp0\bin\Mods\DantorsMentalHospitalDunGen\*" "%~dp0..\BepInEx\plugins\DantorsMentalHospitalDunGen\"
     xcopy /s /y "%~dp0\bin\Mods\Dependencies\Core\*" "%~dp0..\BepInEx\core\"
     xcopy /s /y "%~dp0\bin\Mods\Dependencies\Patchers\*" "%~dp0..\BepInEx\patchers\"
     copy "%~dp0\bin\Temp\BepInEx\doorstop_config.ini" "%~dp0..\"
@@ -132,8 +149,9 @@ cls
 if exist "%~dp0\modlist.txt" del /s /q "%~dp0\modlist.txt"
 echo Creating mods text file...
 echo - Additional Suits> modlist.txt
-echo - AlwaysHearActiveWalkies>> modlist.txt
 echo - CustomDeathPenalty>> modlist.txt
+echo - DantorsMentalHospital>> modlist.txt
+echo - HelmetCamera>> modlist.txt
 echo - HDLethalCompany>> modlist.txt
 echo - HideChat>> modlist.txt
 echo - ItemQuickSwitch>> modlist.txt
@@ -145,6 +163,9 @@ echo - LCUltrawide>> modlist.txt
 echo - Mirage>> modlist.txt
 echo - MoreBlood>> modlist.txt
 echo - MoreCompany>> modlist.txt
+echo - PsychSanctum>> modlist.txt
+echo - ReservedFlashlightSlot>> modlist.txt
+echo - ReservedWalkieSlot>> modlist.txt
 echo - ScrollInverter>> modlist.txt
 echo - ShipClock>> modlist.txt
 echo - ShipLoot>> modlist.txt
