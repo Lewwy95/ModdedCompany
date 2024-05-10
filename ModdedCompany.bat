@@ -105,6 +105,11 @@ if not exist "%~dp0..\BepInEx" (
     mkdir "%~dp0..\BepInEx\plugins\LethalModDataLib"
     mkdir "%~dp0..\BepInEx\plugins\PsychSanctum"
     mkdir "%~dp0..\BepInEx\plugins\DantorsMentalHospitalDunGen"
+    mkdir "%~dp0..\BepInEx\plugins\MoreEmotes"
+    mkdir "%~dp0..\BepInEx\plugins\LethalCompanyInputUtils"
+    mkdir "%~dp0..\BepInEx\plugins\CSync"
+    mkdir "%~dp0..\BepInEx\plugins\InteractiveTerminalAPI"
+    mkdir "%~dp0..\BepInEx\plugins\MoreShipUpgrades"
     mkdir "%~dp0..\BepInEx\plugins\Assets"
     powershell -c "Expand-Archive '%~dp0\bin\Mods\BepInEx.zip' -Force '%~dp0\bin\Temp'"
     xcopy /s /y "%~dp0\bin\Temp\BepInEx\BepInEx\*" "%~dp0..\BepInEx"
@@ -119,6 +124,11 @@ if not exist "%~dp0..\BepInEx" (
     xcopy /s /y "%~dp0\bin\Mods\LethalModDataLib\*" "%~dp0..\BepInEx\plugins\LethalModDataLib\"
     xcopy /s /y "%~dp0\bin\Mods\PsychSanctum\*" "%~dp0..\BepInEx\plugins\PsychSanctum\"
     xcopy /s /y "%~dp0\bin\Mods\DantorsMentalHospitalDunGen\*" "%~dp0..\BepInEx\plugins\DantorsMentalHospitalDunGen\"
+    xcopy /s /y "%~dp0\bin\Mods\MoreEmotes\*" "%~dp0..\BepInEx\plugins\MoreEmotes\"
+    xcopy /s /y "%~dp0\bin\Mods\LethalCompanyInputUtils\*" "%~dp0..\BepInEx\plugins\LethalCompanyInputUtils\"
+    xcopy /s /y "%~dp0\bin\Mods\CSync\*" "%~dp0..\BepInEx\plugins\CSync\"
+    xcopy /s /y "%~dp0\bin\Mods\InteractiveTerminalAPI\*" "%~dp0..\BepInEx\plugins\InteractiveTerminalAPI\"
+    xcopy /s /y "%~dp0\bin\Mods\MoreShipUpgrades\*" "%~dp0..\BepInEx\plugins\MoreShipUpgrades\"
     xcopy /s /y "%~dp0\bin\Mods\Assets\*" "%~dp0..\BepInEx\plugins\Assets\"
     xcopy /s /y "%~dp0\bin\Mods\Dependencies\Core\*" "%~dp0..\BepInEx\core\"
     xcopy /s /y "%~dp0\bin\Mods\Dependencies\Patchers\*" "%~dp0..\BepInEx\patchers\"
@@ -169,13 +179,14 @@ echo - Mimics>> modlist.txt
 echo - Mirage>> modlist.txt
 echo - MoreBlood>> modlist.txt
 echo - MoreCompany>> modlist.txt
+echo - MoreEmotes>> modlist.txt
+echo - MoreShipUpgrades>> modlist.txt
 echo - PsychSanctum>> modlist.txt
 echo - ReservedFlashlightSlot>> modlist.txt
 echo - ReservedWalkieSlot>> modlist.txt
 echo - ScrollInverter>> modlist.txt
 echo - ShipClock>> modlist.txt
 echo - ShipLoot>> modlist.txt
-echo - TooManyEmotes>> modlist.txt
 echo - QuickRestart>> modlist.txt
 cls
 
