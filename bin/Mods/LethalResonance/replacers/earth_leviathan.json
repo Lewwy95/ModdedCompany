@@ -76,14 +76,6 @@
             ]
         },
         {
-            "matches": "SandWorm:BurrowingRumbleLoud1",
-            "sounds": [
-                {
-                    "sound": "earth_leviathan/BurrowingRumbleLoud1.ogg"
-                }
-            ]
-        },
-        {
             "matches": "SandWorm:EmergeFromGround1",
             "sounds": [
                 {

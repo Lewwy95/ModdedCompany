@@ -1,5 +1,5 @@
 {
-"condition": {
+	"condition": {
         "type": "config",
         "config": "EnabledSounds:items"
     },
@@ -9,6 +9,11 @@
     "replacements": [
         {
             "matches": "Boombox:BoomboxStop",
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
                     "sound": "items/BoomboxStop.ogg"
@@ -25,6 +30,11 @@
         },
         {
             "matches": "ExtensionLadderItem:ExtensionLadderAlarm",
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
                     "sound": "items/ExtensionLadderAlarm.ogg"
@@ -33,6 +43,11 @@
         },
         {
             "matches": "ExtensionLadderItem:ExtensionLadderHitWall",
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
                     "sound": "items/ExtensionLadderHitWall.ogg"
@@ -41,6 +56,11 @@
         },
         {
             "matches": "ExtensionLadderItem:ExtensionLadderHitWall2",
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
                     "sound": "items/ExtensionLadderHitWall2.ogg"
@@ -57,6 +77,11 @@
         },
         {
             "matches": "ExtensionLadderItem:FallingAir",
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
                     "sound": "items/FallingAir.ogg"
@@ -64,50 +89,15 @@
             ]
         },
         {
-            "matches": "WhoopieCushion:Fart1",
-            "sounds": [
-                {
-                    "sound": "items/Fart1.ogg"
-                }
-            ]
-        },
-        {
-            "matches": "WhoopieCushion:Fart2",
-            "sounds": [
-                {
-                    "sound": "items/Fart2.ogg"
-                }
-            ]
-        },
-        {
-            "matches": "WhoopieCushion:Fart3",
-            "sounds": [
-                {
-                    "sound": "items/Fart3.ogg"
-                }
-            ]
-        },
-        {
-            "matches": "WhoopieCushion:Fart5",
-            "sounds": [
-                {
-                    "sound": "items/Fart5.ogg"
-                }
-            ]
-        },
-        {
             "matches": "StunGrenade:FlashbangPullPin",
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
                     "sound": "items/FlashbangPullPin.ogg"
-                }
-            ]
-        },
-        {
-            "matches": "MenuManager:GlassShatter",
-            "sounds": [
-                {
-                    "sound": "items/GlassShatter.ogg"
                 }
             ]
         },
@@ -121,9 +111,19 @@
         },
         {
             "matches": "ItemAudio:GrabShotgun",
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
-                    "sound": "items/GrabShotgun.ogg"
+                    "sound": "items/GrabShotgun1.ogg",
+					"weight": 1
+                },
+                {
+                    "sound": "items/GrabShotgun2.ogg",
+					"weight": 1
                 }
             ]
         },
@@ -146,25 +146,6 @@
             "sounds": [
                 {
                     "sound": "items/GunOverheatWarning.ogg"
-                }
-            ]
-        },
-        {
-            "matches": "Hairdryer:Hairdryer1",
-            "sounds": [
-                {
-                    "sound": "items/Hairdryer1.ogg"
-                }
-            ]
-        },
-        {
-            "matches": [
-                "Hairdryer:HairdryerFar",
-                "FarAudio:HairdryerFar"
-            ],
-            "sounds": [
-                {
-                    "sound": "items/HairdryerFar.ogg"
                 }
             ]
         },
@@ -193,22 +174,6 @@
             ]
         },
         {
-            "matches": "OldPhone:PhoneScream",
-            "sounds": [
-                {
-                    "sound": "items/PhoneScream.ogg"
-                }
-            ]
-        },
-        {
-            "matches": "RadarBoosterDevice:RadarBoosterFlash",
-            "sounds": [
-                {
-                    "sound": "items/RadarBoosterFlash.ogg"
-                }
-            ]
-        },
-        {
             "matches": [
                 "PatcherGunItem:ShockBeam1",
                 "Curve2:ShockBeam1"
@@ -232,24 +197,31 @@
         },
         {
             "matches": [
-                "ShotgunItem:ShotgunBlast",
-                "GunShootSFX:ShotgunBlast"
+                "ShotgunItem:GunShootSFX:ShotgunBlast",
+                "ShotgunItem:GunShootSFX:ShotgunBlast2",
             ],
+	        "condition": {
+            "type": "config",
+            "config": "EnabledSounds:shotgun",
+            "value": true
+	        },
             "sounds": [
                 {
-                    "sound": "items/ShotgunBlast.ogg"
-                }
-            ]
-        },
-        {
-            "matches": [
-                "ShotgunItem:ShotgunBlast2",
-                "GunShootSFX:ShotgunBlast2"
-            ],
-            "sounds": [
+                    "sound": "items/ShotgunBlast.ogg",
+					"weight": 1
+                },
                 {
-                    "sound": "items/ShotgunBlast2.ogg"
-                }
+                    "sound": "items/ShotgunBlast2.ogg",
+					"weight": 1
+                },
+                {
+                    "sound": "items/ShotgunBlast3.ogg",
+					"weight": 1
+                },
+                {
+                    "sound": "items/ShotgunBlast4.ogg",
+					"weight": 1
+                },
             ]
         },
         {
@@ -262,33 +234,14 @@
         },
         {
             "matches": "ShotgunItem:ShotgunReload",
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
                     "sound": "items/ShotgunReload.ogg"
-                }
-            ]
-        },
-        {
-            "matches": "CreatureSFX:ShotgunReloadNutcracker",
-            "sounds": [
-                {
-                    "sound": "items/ShotgunReloadNutcracker.ogg"
-                }
-            ]
-        },
-        {
-            "matches": "ShotgunItem:ShotgunSafetyOff",
-            "sounds": [
-                {
-                    "sound": "items/ShotgunSafetyOff.ogg"
-                }
-            ]
-        },
-        {
-            "matches": "ShotgunItem:ShotgunSafetyOn",
-            "sounds": [
-                {
-                    "sound": "items/ShotgunSafetyOn.ogg"
                 }
             ]
         },
@@ -298,6 +251,21 @@
                 "ShovelItem:ShovelHitDefault",
                 "YieldSign:ShovelHitDefault"
             ],
+			"condition": {
+			"type": "and",
+			"conditions": [
+					{
+						"type": "config",
+						"config": "A_Options:Performance_Mode_Extras",
+						"value": false
+					},
+					{
+						"type": "config",
+						"config": "EnabledSounds:shovel",
+						"value": true
+					}
+				]
+			},
             "sounds": [
                 {
                     "sound": "items/ShovelHitDefault.ogg"
@@ -310,9 +278,60 @@
                 "ShovelItem:ShovelHitDefault2",
                 "YieldSign:ShovelHitDefault2"
             ],
+			"condition": {
+			"type": "and",
+			"conditions": [
+					{
+						"type": "config",
+						"config": "A_Options:Performance_Mode_Extras",
+						"value": false
+					},
+					{
+						"type": "config",
+						"config": "EnabledSounds:shovel",
+						"value": true
+					}
+				]
+			},
             "sounds": [
                 {
                     "sound": "items/ShovelHitDefault2.ogg"
+                }
+            ]
+        },
+        {
+            "matches": "*:ShovelReelUp",
+            "sounds": [
+                {
+                    "sound": "Shovel/ShovelReel1.ogg",
+                    "weight": 1
+                },
+                {
+                    "sound": "Shovel/ShovelReel2.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
+                    "weight": 1
+                },
+                {
+                    "sound": "Shovel/ShovelReel3.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
+                    "weight": 1
+                },
+                {
+                    "sound": "Shovel/ShovelReel4.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
+                    "weight": 1
                 }
             ]
         },
@@ -324,11 +343,13 @@
                 }
             ]
         },
-
-
-
         {
             "matches": "WalkieTalkie:WalkieTalkieCutOut",
+			"condition": {
+				"type": "config",
+				"config": "EnabledSounds:walkie",
+				"value": true
+			},
             "sounds": [
                 {
                     "sound": "items/WalkieTalkieCutOut.ogg"
@@ -337,14 +358,11 @@
         },
         {
             "matches": "WalkieTalkie:WalkieTalkieOff",
-            "sounds": [
-                {
-                    "sound": "items/WalkieTalkieOff.ogg"
-                }
-            ]
-        },
-        {
-            "matches": "WalkieTalkie:WalkieTalkieOn",
+			"condition": {
+				"type": "config",
+				"config": "EnabledSounds:walkie",
+				"value": true
+			},
             "sounds": [
                 {
                     "sound": "items/WalkieTalkieOn.ogg"
@@ -352,7 +370,25 @@
             ]
         },
         {
+            "matches": "WalkieTalkie:WalkieTalkieOn",
+			"condition": {
+				"type": "config",
+				"config": "EnabledSounds:walkie",
+				"value": true
+			},
+            "sounds": [
+                {
+                    "sound": "items/WalkieTalkieOff.ogg"
+                }
+            ]
+        },
+        {
             "matches": "WalkieTalkie:WalkieTalkieTalkingNotHeld",
+			"condition": {
+				"type": "config",
+				"config": "EnabledSounds:walkie",
+				"value": true
+			},
             "sounds": [
                 {
                     "sound": "items/WalkieTalkieTalkingNotHeld.ogg"
@@ -360,43 +396,35 @@
             ]
         },
         {
-            "matches": "WalkieTalkie:WalkieTalkieTransmissionOff",
+            "matches": [
+			"WalkieTalkie:WalkieTalkieTransmissionOff",
+			"WalkieTalkie:WalkieTalkieTransmissionOff2",
+			"WalkieTalkie:WalkieTalkieTransmissionOff3",
+			"WalkieTalkie:WalkieTalkieTransmissionOff4",
+			"WalkieTalkie:WalkieTalkieTransmissionOff5",
+			],
+			"condition": {
+				"type": "config",
+				"config": "EnabledSounds:walkie",
+				"value": true
+			},
             "sounds": [
                 {
-                    "sound": "items/WalkieTalkieTransmissionOff.ogg"
-                }
-            ]
-        },
-        {
-            "matches": "WalkieTalkie:WalkieTalkieTransmissionOff2",
-            "sounds": [
+                    "sound": "items/WalkieTalkieTransmissionOff1.ogg",
+					"weight": 2
+                },
                 {
-                    "sound": "items/WalkieTalkieTransmissionOff2.ogg"
-                }
-            ]
-        },
-        {
-            "matches": "WalkieTalkie:WalkieTalkieTransmissionOff3",
-            "sounds": [
+                    "sound": "items/WalkieTalkieTransmissionOff2.ogg",
+					"weight": 2
+                },
                 {
-                    "sound": "items/WalkieTalkieTransmissionOff3.ogg"
-                }
-            ]
-        },
-        {
-            "matches": "WalkieTalkie:WalkieTalkieTransmissionOff4",
-            "sounds": [
+                    "sound": "items/WalkieTalkieTransmissionOff3.ogg",
+					"weight": 1
+                },
                 {
-                    "sound": "items/WalkieTalkieTransmissionOff4.ogg"
-                }
-            ]
-        },
-        {
-            "matches": "WalkieTalkie:WalkieTalkieTransmissionOff5",
-            "sounds": [
-                {
-                    "sound": "items/WalkieTalkieTransmissionOff5.ogg"
-                }
+                    "sound": "items/WalkieTalkieTransmissionOff4.ogg",
+					"weight": 1
+                },
             ]
         }
     ]

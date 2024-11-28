@@ -12,6 +12,11 @@
                 "RedLocustBees:BeesAngry",
                 "AngrySFX:BeesAngry"
             ],
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
                     "sound": "circuit_bees/BeesAngry.ogg"
@@ -23,6 +28,11 @@
                 "RedLocustBees:BeesDefensive",
                 "DefendingSFX:BeesDefensive"
             ],
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
                     "sound": "circuit_bees/BeesDefensive.ogg"

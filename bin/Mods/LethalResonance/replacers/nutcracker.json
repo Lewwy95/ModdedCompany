@@ -19,10 +19,20 @@
                 },
                 {
                     "sound": "nutcracker/AlertedSFX_2.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 },
                 {
                     "sound": "nutcracker/AlertedSFX_3.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 }
             ]
@@ -39,14 +49,29 @@
                 },
                 {
                     "sound": "nutcracker/BootStomp1_2.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 },
                 {
                     "sound": "nutcracker/BootStomp1_3.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 },
                 {
                     "sound": "nutcracker/BootStomp1_4.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 }
             ]
@@ -63,10 +88,20 @@
                 },
                 {
                     "sound": "nutcracker/BootStomp2_2.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 },
                 {
                     "sound": "nutcracker/BootStomp2_3.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 }
             ]
@@ -83,10 +118,20 @@
                 },
                 {
                     "sound": "nutcracker/BootStomp3_2.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 },
                 {
                     "sound": "nutcracker/BootStomp3_3.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 }
             ]
@@ -103,10 +148,20 @@
                 },
                 {
                     "sound": "nutcracker/HeadGoUp_2.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 },
                 {
                     "sound": "nutcracker/HeadGoUp_3.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 }
             ]
@@ -123,10 +178,20 @@
                 },
                 {
                     "sound": "nutcracker/Kick_2.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 },
                 {
                     "sound": "nutcracker/Kick_3.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 }
             ]
@@ -143,10 +208,20 @@
                 },
                 {
                     "sound": "nutcracker/MetalSqueak1_2.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 },
                 {
                     "sound": "nutcracker/MetalSqueak1_3.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 }
             ]
@@ -163,10 +238,20 @@
                 },
                 {
                     "sound": "nutcracker/MetalSqueak2_2.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 },
                 {
                     "sound": "nutcracker/MetalSqueak2_3.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 }
             ]
@@ -183,10 +268,20 @@
                 },
                 {
                     "sound": "nutcracker/MetalSqueak3_2.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 },
                 {
                     "sound": "nutcracker/MetalSqueak3_3.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 }
             ]
@@ -203,10 +298,20 @@
                 },
                 {
                     "sound": "nutcracker/MetalSqueak4_2.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 },
                 {
                     "sound": "nutcracker/MetalSqueak4_3.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 }
             ]
@@ -223,10 +328,20 @@
                 },
                 {
                     "sound": "nutcracker/NutcrackerTurn_2.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 },
                 {
                     "sound": "nutcracker/NutcrackerTurn_3.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 }
             ]
@@ -243,10 +358,20 @@
                 },
                 {
                     "sound": "nutcracker/StopTurning1_2.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 },
                 {
                     "sound": "nutcracker/StopTurning1_3.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 }
             ]
@@ -263,10 +388,20 @@
                 },
                 {
                     "sound": "nutcracker/StopTurning2_2.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 },
                 {
                     "sound": "nutcracker/StopTurning2_3.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 }
             ]
@@ -283,12 +418,59 @@
                 },
                 {
                     "sound": "nutcracker/StopTurning3_2.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 },
                 {
                     "sound": "nutcracker/StopTurning3_3.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 }
+            ]
+        },
+        {
+            "matches": "CreatureSFX:ShotgunReloadNutcracker",
+            "sounds": [
+                {
+                    "sound": "items/ShotgunReloadNutcracker.ogg"
+                }
+            ]
+        },
+        {
+            "matches": [
+			"NutcrackerEnemy:GunShootSFX:ShotgunBlast",
+			"NutcrackerEnemy:GunShootSFX:ShotgunBlast2",
+			],
+	        "condition": {
+            "type": "config",
+            "config": "EnabledSounds:nutcracker_shotgun",
+            "value": true
+	        },
+            "sounds": [
+                {
+                    "sound": "items/ShotgunBlast.ogg",
+					"weight": 1
+                },
+                {
+                    "sound": "items/ShotgunBlast2.ogg",
+					"weight": 1
+                },
+                {
+                    "sound": "items/ShotgunBlast3.ogg",
+					"weight": 1
+                },
+                {
+                    "sound": "items/ShotgunBlast4.ogg",
+					"weight": 1
+                },
             ]
         }
     ]

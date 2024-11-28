@@ -25,7 +25,10 @@
             ]
         },
         {
-            "matches": "Crawler:CrawlerDie",
+            "matches": [
+			"Crawler:CrawlerDie",
+			"VoiceSFX:CrawlerDie",
+			],
             "sounds": [
                 {
                     "sound": "thumper/CrawlerDie.ogg"
@@ -33,7 +36,10 @@
             ]
         },
         {
-            "matches": "Crawler:HitCrawler",
+            "matches": [
+			"VoiceSFX:HitCrawler",
+			"Crawler:HitCrawler",
+			],
             "sounds": [
                 {
                     "sound": "thumper/HitCrawler_1.ogg",
@@ -50,7 +56,10 @@
             ]
         },
         {
-            "matches": "Crawler:HitCrawler2",
+            "matches": [
+			"VoiceSFX:HitCrawler2",
+			"Crawler:HitCrawler2",
+			],
             "sounds": [
                 {
                     "sound": "thumper/HitCrawler2_1.ogg",
@@ -127,7 +136,10 @@
             ]
         },
         {
-            "matches": "Crawler:Ram1",
+            "matches": [
+			"Crawler:Ram1",
+			"VoiceSFX:Ram1",
+			],
             "sounds": [
                 {
                     "sound": "thumper/Ram1_1.ogg",
@@ -144,7 +156,10 @@
             ]
         },
         {
-            "matches": "Crawler:Ram2",
+            "matches": [
+			"Crawler:Ram2",
+			"VoiceSFX:Ram2",
+			],
             "sounds": [
                 {
                     "sound": "thumper/Ram2_1.ogg",
@@ -161,7 +176,10 @@
             ]
         },
         {
-            "matches": "Crawler:Ram3",
+            "matches": [
+			"Crawler:Ram3",
+			"VoiceSFX:Ram3",
+			],
             "sounds": [
                 {
                     "sound": "thumper/Ram3_1.ogg",
@@ -229,7 +247,10 @@
             ]
         },
         {
-            "matches": "Crawler:StunCrawler",
+            "matches": [
+			"Crawler:StunCrawler",
+			"VoiceSFX:StunCrawler",
+			],
             "sounds": [
                 {
                     "sound": "thumper/StunCrawler_1.ogg",

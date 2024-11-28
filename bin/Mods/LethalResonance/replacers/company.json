@@ -9,6 +9,11 @@
     "replacements": [
         {
             "matches": "Trigger:Belldinger",
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
                     "sound": "company/Belldinger.ogg"
@@ -17,6 +22,11 @@
         },
         {
             "matches": "FancyDoorMapModel:DoorShut",
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
                     "sound": "company/DoorShut.ogg"
@@ -58,6 +68,11 @@
         },
         {
             "matches": "DeskAudio:SmallHatchDoorOpen",
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
                     "sound": "company/SmallHatchDoorOpen.ogg"
@@ -66,6 +81,11 @@
         },
         {
             "matches": "DeskAudio:TentaclesAttack",
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
                     "sound": "company/TentaclesAttack.ogg"
@@ -74,6 +94,11 @@
         },
         {
             "matches": "DeskAudio:TakeItems1",
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
                     "sound": "company/TakeItems1.ogg"
@@ -82,6 +107,11 @@
         },
         {
             "matches": "DeskAudio:TakeItems2",
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
                     "sound": "company/TakeItems2.ogg"
@@ -90,6 +120,11 @@
         },
         {
             "matches": "DeskAudio:TakeItems3",
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
                     "sound": "company/TakeItems3.ogg"

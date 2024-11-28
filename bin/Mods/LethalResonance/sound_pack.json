@@ -1,22 +1,52 @@
 {
     "name": "LethalResonance",
-    "load_on_startup": ["menu"],
-
     "config": {
-        "EnabledSounds:menu_theme": {
-            "description": "Enable LR menu theme? (AbientPackMusic compatible)",
+        "BioDiversity:OgoPogo": {
+            "description": "Enable Custom Ogopogo sounds?",
             "default": true
         },
-        "EnabledSounds:ambience_music": {
-            "description": "Enable LR main ambience music? (AbientPackMusic compatible)",
+        "BioDiversity:LeafBoy": {
+            "description": "Enable Custom Leaf Boy sounds?",
+            "default": true
+        },
+        "BioDiversity:Aloe": {
+            "description": "Enable Custom Aloe sounds?",
+            "default": true
+        },
+        "A_Options:Performance_Mode": {
+            "description": "FEATURE ON HOLD, LEAVE DISABLED (May reduce CPU overhead at cost of RAM, this is not intended behavior)",
+            "default": false
+        },
+        "A_Options:Performance_Mode_Extras": {
+            "description": "FEATURE ON HOLD, LEAVE DISABLED (May reduce CPU overhead at cost of RAM, this is not intended behavior)",
+            "default": false
+        },
+        "EnabledSounds:nutcracker_shotgun": {
+            "description": "Enable LR nutcracker shotgun fire?",
+            "default": true
+        },
+        "EnabledSounds:shotgun": {
+            "description": "Enable LR shotgun fire?",
+            "default": true
+        },
+        "EnabledSounds:walkie": {
+            "description": "Enable LR walkie-talkie sounds?",
             "default": true
         },
         "EnabledSounds:day_music": {
-            "description": "Enable LR main day music? (AbientPackMusic compatible)",
+            "description": "Enable LR main day music? (AmbientPackMusic compatible)",
             "default": true
         },
-        "EnabledSounds:old_bird": {
-            "description": "Enable LR old bird sounds? (NEW)",
+        "EnabledSounds:diversity": {
+            "description": "Enable LR Custom Diversity sounds?",
+            "default": true
+        },
+        "EnabledSounds:meltdown": {
+            "description": "Enable LR Custom Meltdown sounds?",
+            "default": true
+        },
+        "EnabledSounds:shovel": {
+            "description": "Enable LR shovel sounds?",
             "default": true
         },
         "EnabledSounds:scanner_pixel": {
@@ -31,6 +61,10 @@
             "description": "Enable LR menu sounds?",
             "default": true
         },
+        "EnabledSounds:menu_theme": {
+            "description": "Enable LR menu theme? (AmbientPackMusic compatible)",
+            "default": true
+        },
          "EnabledSounds:ambience_inside": {
             "description": "Enable LR interior ambience sounds?",
             "default": true
@@ -39,16 +73,20 @@
             "description": "Enable LR outside ambience sounds?",
             "default": true
         },
+        "EnabledSounds:ambience_music": {
+            "description": "Enable LR main ambience music? (AmbientPackMusic compatible)",
+            "default": true
+        },
+        "EnabledSounds:eclipsed_music": {
+            "description": "Enable LR eclipsed ambience music? (AmbientPackMusic compatible)",
+            "default": true
+        },
          "EnabledSounds:baboon": {
             "description": "Enable LR baboon sounds?",
             "default": true
         },
          "EnabledSounds:bracken": {
             "description": "Enable LR bracken sounds?",
-            "default": true
-        },
-         "EnabledSounds:breaker_box": {
-            "description": "Enable LR breaker_box sounds?",
             "default": true
         },
          "EnabledSounds:centipede": {
@@ -63,10 +101,6 @@
             "description": "Enable LR coilhead sounds?",
             "default": true
         },
-         "EnabledSounds:company": {
-            "description": "Enable LR company sounds?",
-            "default": true
-        },
          "EnabledSounds:earth_leviathan": {
             "description": "Enable LR earth leviathan sounds?",
             "default": true
@@ -75,16 +109,12 @@
             "description": "Enable LR eyeless dog sounds?",
             "default": true
         },
-         "EnabledSounds:facility": {
-            "description": "Enable LR facility sounds?",
-            "default": true
-        },
          "EnabledSounds:forest_keeper": {
             "description": "Enable LR forest keeper sounds?",
             "default": true
         },
-         "EnabledSounds:items": {
-            "description": "Enable LR item sounds?",
+        "EnabledSounds:hoarding_bug": {
+            "description": "Enable LR hoarding bug sounds?",
             "default": true
         },
          "EnabledSounds:jester": {
@@ -103,44 +133,104 @@
             "description": "Enable LR nutcracker sounds?",
             "default": true
         },
-         "EnabledSounds:outside": {
-            "description": "Enable LR outside sounds?",
+        "EnabledSounds:old_bird": {
+            "description": "Enable LR old bird sounds?",
             "default": true
         },
-         "EnabledSounds:player": {
-            "description": "Enable LR player sounds?",
+        "EnabledSounds:old_bird_footsteps": {
+            "description": "Enable LR old bird footstep sounds?",
+            "default": true
+        },
+        "EnabledSounds:old_bird_speaker": {
+            "description": "Enable LR old bird loudspeaker sounds?",
+            "default": true
+        },
+         "EnabledSounds:manticoil": {
+            "description": "Enable LR manticoil sounds?",
             "default": true
         },
          "EnabledSounds:puffer": {
             "description": "Enable LR puffer sounds?",
             "default": true
         },
-         "EnabledSounds:scrap": {
-            "description": "Enable LR scrap sounds?",
-            "default": true
-        },
-         "EnabledSounds:ship": {
-            "description": "Enable LR ship sounds?",
-            "default": true
-        },
          "EnabledSounds:spider": {
             "description": "Enable LR spider sounds?",
-            "default": true
-        },
-         "EnabledSounds:terminal": {
-            "description": "Enable LR terminal sounds?",
             "default": true
         },
          "EnabledSounds:thumper": {
             "description": "Enable LR thumper sounds?",
             "default": true
         },
-         "EnabledSounds:turret_and_mines": {
-            "description": "Enable LR turret and mine sounds?",
+         "EnabledSounds:player": {
+            "description": "Enable LR player sounds?",
+            "default": true
+        },
+         "EnabledSounds:player_death": {
+            "description": "Enable LR player dying sounds?",
+            "default": true
+        },
+        "EnabledSounds:footsteps": {
+            "description": "((VERY RAM HEAVY)) Enable LR player footstep sounds?",
+            "default": true
+        },
+         "EnabledSounds:stress": {
+            "description": "Enable LR player panic sounds?",
+            "default": true
+        },
+        "EnabledSounds:cruiser": {
+            "description": "Enable LR cruiser sounds?",
+            "default": true
+        },
+         "EnabledSounds:ship": {
+            "description": "Enable LR ship sounds?",
+            "default": true
+        },
+         "EnabledSounds:ship_door_alarm": {
+            "description": "Enable ship door shut alarm?",
+            "default": true
+        },
+         "EnabledSounds:ship_eject_alarm": {
+            "description": "Enable ship ejection alarm?",
+            "default": true
+        },
+         "EnabledSounds:terminal": {
+            "description": "Enable LR terminal sounds?",
+            "default": true
+        },
+         "EnabledSounds:company": {
+            "description": "Enable LR company sounds?",
+            "default": true
+        },
+         "EnabledSounds:facility": {
+            "description": "Enable LR facility sounds?",
+            "default": true
+        },
+         "EnabledSounds:breaker_box": {
+            "description": "Enable LR breaker_box sounds?",
+            "default": true
+        },
+         "EnabledSounds:dungeon_doors": {
+            "description": "Enable LR common dungeon door sounds?",
             "default": true
         },
         "EnabledSounds:main_doors": {
             "description": "Enable LR main door sounds?",
+            "default": true
+        },
+         "EnabledSounds:chaos_flicker": {
+            "description": "Use old flickering sound?",
+            "default": false
+        },
+         "EnabledSounds:items": {
+            "description": "Enable LR item sounds?",
+            "default": true
+        },
+         "EnabledSounds:scrap": {
+            "description": "Enable LR scrap sounds?",
+            "default": true
+        },
+         "EnabledSounds:turret_and_mines": {
+            "description": "Enable LR turret and mine sounds?",
             "default": true
         },
         "EnabledSounds:apparatus": {

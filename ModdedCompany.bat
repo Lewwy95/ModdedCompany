@@ -49,10 +49,6 @@ goto install
 :install
 echo Downloading latest revision...
 echo.
-echo Don't worry - the bat file is working!
-echo I can't show a progress bar here because it makes it take longer (actually true).
-echo This may take a while due to large audio files being downloaded.
-echo.
 powershell -c "(New-Object System.Net.WebClient).DownloadFile('https://github.com/Lewwy95/ModdedCompany/archive/refs/heads/main.zip','%~dp0\bin\Temp\ModdedCompany-main.zip')"
 cls
 
@@ -91,51 +87,30 @@ call "%~dp0\Uninstall.bat"
 :: Move New Mods
 echo Installing mods...
 if not exist "%~dp0..\BepInEx" (
+    :: Create the core folders and move the files
     mkdir "%~dp0..\BepInEx"
     mkdir "%~dp0..\BepInEx\config"
-    mkdir "%~dp0..\BepInEx\config\EliteMasterEric-Coroner"
+    mkdir "%~dp0..\BepInEx\config\MoreSuitsConfig"
     mkdir "%~dp0..\BepInEx\core"
     mkdir "%~dp0..\BepInEx\patchers"
+    mkdir "%~dp0..\BepInEx\patchers\FixPluginTypesSerialization"
     mkdir "%~dp0..\BepInEx\plugins"
-    mkdir "%~dp0..\BepInEx\plugins\resAdditionalSuits"
-    mkdir "%~dp0..\BepInEx\plugins\HDLethalCompany"
-    mkdir "%~dp0..\BepInEx\plugins\LethalConfig"
-    mkdir "%~dp0..\BepInEx\plugins\LethalResonance"
-    mkdir "%~dp0..\BepInEx\plugins\LethalLib"
-    mkdir "%~dp0..\BepInEx\plugins\LethalModDataLib"
-    mkdir "%~dp0..\BepInEx\plugins\PsychSanctum"
-    mkdir "%~dp0..\BepInEx\plugins\DantorsMentalHospitalDunGen"
-    mkdir "%~dp0..\BepInEx\plugins\MoreEmotes"
-    mkdir "%~dp0..\BepInEx\plugins\LethalCompanyInputUtils"
-    mkdir "%~dp0..\BepInEx\plugins\CSync"
-    mkdir "%~dp0..\BepInEx\plugins\InteractiveTerminalAPI"
-    mkdir "%~dp0..\BepInEx\plugins\MoreShipUpgrades"
+    mkdir "%~dp0..\BepInEx\plugins\moresuits"
     mkdir "%~dp0..\BepInEx\plugins\Assets"
+    mkdir "%~dp0..\BepInEx\plugins\LethalResonance"
+    mkdir "%~dp0..\BepInEx\plugins\CSync"
     powershell -c "Expand-Archive '%~dp0\bin\Mods\BepInEx.zip' -Force '%~dp0\bin\Temp'"
     xcopy /s /y "%~dp0\bin\Temp\BepInEx\BepInEx\*" "%~dp0..\BepInEx"
     xcopy /s /y "%~dp0\bin\Configs\*" "%~dp0..\BepInEx\config"
-    xcopy /s /y "%~dp0\bin\Configs\EliteMasterEric-Coroner\*" "%~dp0..\BepInEx\config\EliteMasterEric-Coroner"
     xcopy /s /y "%~dp0\bin\Mods\*.dll" "%~dp0..\BepInEx\plugins"
-    xcopy /s /y "%~dp0\bin\Mods\resAdditionalSuits\*" "%~dp0..\BepInEx\plugins\resAdditionalSuits\"
-    xcopy /s /y "%~dp0\bin\Mods\HDLethalCompany\*" "%~dp0..\BepInEx\plugins\HDLethalCompany\"
-    xcopy /s /y "%~dp0\bin\Mods\LethalConfig\*" "%~dp0..\BepInEx\plugins\LethalConfig\"
-    xcopy /s /y "%~dp0\bin\Mods\LethalResonance\*" "%~dp0..\BepInEx\plugins\LethalResonance\"
-    xcopy /s /y "%~dp0\bin\Mods\LethalLib\*" "%~dp0..\BepInEx\plugins\LethalLib\"
-    xcopy /s /y "%~dp0\bin\Mods\LethalModDataLib\*" "%~dp0..\BepInEx\plugins\LethalModDataLib\"
-    xcopy /s /y "%~dp0\bin\Mods\PsychSanctum\*" "%~dp0..\BepInEx\plugins\PsychSanctum\"
-    xcopy /s /y "%~dp0\bin\Mods\DantorsMentalHospitalDunGen\*" "%~dp0..\BepInEx\plugins\DantorsMentalHospitalDunGen\"
-    xcopy /s /y "%~dp0\bin\Mods\MoreEmotes\*" "%~dp0..\BepInEx\plugins\MoreEmotes\"
-    xcopy /s /y "%~dp0\bin\Mods\LethalCompanyInputUtils\*" "%~dp0..\BepInEx\plugins\LethalCompanyInputUtils\"
-    xcopy /s /y "%~dp0\bin\Mods\CSync\*" "%~dp0..\BepInEx\plugins\CSync\"
-    xcopy /s /y "%~dp0\bin\Mods\InteractiveTerminalAPI\*" "%~dp0..\BepInEx\plugins\InteractiveTerminalAPI\"
-    xcopy /s /y "%~dp0\bin\Mods\MoreShipUpgrades\*" "%~dp0..\BepInEx\plugins\MoreShipUpgrades\"
-    xcopy /s /y "%~dp0\bin\Mods\Assets\*" "%~dp0..\BepInEx\plugins\Assets\"
-    xcopy /s /y "%~dp0\bin\Mods\Dependencies\Core\*" "%~dp0..\BepInEx\core\"
-    xcopy /s /y "%~dp0\bin\Mods\Dependencies\Patchers\*" "%~dp0..\BepInEx\patchers\"
+    xcopy /s /y "%~dp0\bin\Mods\moresuits\*" "%~dp0..\BepInEx\plugins\moresuits"
+    xcopy /s /y "%~dp0\bin\Mods\Assets\*" "%~dp0..\BepInEx\plugins\Assets"
+    xcopy /s /y "%~dp0\bin\Mods\LethalResonance\*" "%~dp0..\BepInEx\plugins\LethalResonance"
+    xcopy /s /y "%~dp0\bin\Mods\CSync\*" "%~dp0..\BepInEx\plugins\CSync"
+    xcopy /s /y "%~dp0\bin\Core\*" "%~dp0..\BepInEx\core"
+    xcopy /s /y "%~dp0\bin\Patchers\*" "%~dp0..\BepInEx\patchers"
     copy "%~dp0\bin\Temp\BepInEx\doorstop_config.ini" "%~dp0..\"
     copy "%~dp0\bin\Temp\BepInEx\winhttp.dll" "%~dp0..\"
-    del /s /q "%~dp0..\BepInEx\plugins\Dependencies\*"
-    rmdir /s /q "%~dp0..\BepInEx\plugins\Dependencies"
 )
 cls
 
@@ -162,32 +137,24 @@ cls
 :modlist
 if exist "%~dp0\modlist.txt" del /s /q "%~dp0\modlist.txt"
 echo Creating mods text file...
-echo - Additional Suits> modlist.txt
-echo - Coroner>> modlist.txt
 echo - CustomDeathPenalty>> modlist.txt
-echo - DantorsMentalHospital>> modlist.txt
-echo - HelmetCamera>> modlist.txt
-echo - HDLethalCompany>> modlist.txt
+echo - FasterItemDropship>> modlist.txt
+echo - Helmet Cameras>> modlist.txt
 echo - HideChat>> modlist.txt
-echo - ItemQuickSwitch>> modlist.txt
-echo - LateCompany>> modlist.txt
-echo - LethalResonance>> modlist.txt
-echo - LetTheDeadRest>> modlist.txt
-echo - LBtoKG>> modlist.txt
+echo - IntroTweaks>> modlist.txt
 echo - LCUltrawide>> modlist.txt
+echo - LETHALRESONANCE>> modlist.txt
 echo - Mimics>> modlist.txt
-echo - Mirage>> modlist.txt
 echo - MoreBlood>> modlist.txt
 echo - MoreCompany>> modlist.txt
-echo - MoreEmotes>> modlist.txt
-echo - MoreShipUpgrades>> modlist.txt
-echo - PsychSanctum>> modlist.txt
+echo - More Suits>> modlist.txt
+echo - QuickRestart>> modlist.txt
+echo - QuotaRollover>> modlist.txt
 echo - ReservedFlashlightSlot>> modlist.txt
 echo - ReservedWalkieSlot>> modlist.txt
 echo - ScrollInverter>> modlist.txt
-echo - ShipClock>> modlist.txt
 echo - ShipLoot>> modlist.txt
-echo - QuickRestart>> modlist.txt
+echo - TooManyEmotes>> modlist.txt
 cls
 
 :: Clear 'Temp' Folder

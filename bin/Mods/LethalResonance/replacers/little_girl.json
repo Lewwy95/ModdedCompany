@@ -23,14 +23,29 @@
                 },
                 {
                     "sound": "little_girl/Breath1_3.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 },
                 {
                     "sound": "little_girl/Breath1_4.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 },
                 {
                     "sound": "little_girl/Breath1_5.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 }
             ]
@@ -55,14 +70,29 @@
                 },
                 {
                     "sound": "little_girl/Breath2_4.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 },
                 {
                     "sound": "little_girl/Breath2_5.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 },
                 {
                     "sound": "little_girl/Breath2_6.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 }
             ]
@@ -87,14 +117,29 @@
                 },
                 {
                     "sound": "little_girl/Breath3_4.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 },
                 {
                     "sound": "little_girl/Breath3_5.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 },
                 {
                     "sound": "little_girl/Breath3_6.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 }
             ]
@@ -111,16 +156,8 @@
             ]
         },
         {
-            "matches": "PlayerRagdollHeadBurst Variant:ExplodeHead",
-            "sounds": [
-                {
-                    "sound": "little_girl/ExplodeHead.ogg"
-                }
-            ]
-        },
-        {
             "matches": [
-                "VoiceSFX:Laugh1",
+                "DressGirlModel:VoiceSFX:Laugh1",
                 "DressGirl:Laugh1"
             ],
             "sounds": [
@@ -136,7 +173,7 @@
         },
         {
             "matches": [
-                "VoiceSFX:Laugh2",
+                "DressGirlModel:VoiceSFX:Laugh2",
                 "DressGirl:Laugh2"
             ],
             "sounds": [

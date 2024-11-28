@@ -8,22 +8,6 @@
     },
     "replacements": [
         {
-            "matches": "BigDoor:BigDoorClose",
-            "sounds": [
-                {
-                    "sound": "ship/BigDoorClose.ogg"
-                }
-            ]
-        },
-        {
-            "matches": "BigDoor:BigDoorOpen",
-            "sounds": [
-                {
-                    "sound": "ship/BigDoorOpen.ogg"
-                }
-            ]
-        },
-        {
             "matches": "MovementAudio:ChangeSuit",
             "sounds": [
                 {
@@ -73,6 +57,11 @@
         },
         {
             "matches": "HangarDoorAudioSource:DeadlineAlarm",
+			"condition": {
+			"type": "config",
+			"config": "EnabledSounds:ship_eject_alarm",
+			"value": true
+			},
             "sounds": [
                 {
                     "sound": "ship/DeadlineAlarm.ogg"
@@ -99,7 +88,22 @@
             "matches": "HangarDoorAudioSource:HangarDoorShut",
             "sounds": [
                 {
-                    "sound": "ship/HangarDoorShut.ogg"
+                    "sound": "ship/HangarDoorShutClean.ogg",
+					"condition": {
+					"type": "config",
+					"config": "EnabledSounds:ship_door_alarm",
+					"value": false
+					},
+					"weight": 1
+                },
+                {
+                    "sound": "ship/HangarDoorShut.ogg",
+					"condition": {
+					"type": "config",
+					"config": "EnabledSounds:ship_door_alarm",
+					"value": true
+					},
+					"weight": 1
                 }
             ]
         },
@@ -121,6 +125,11 @@
         },
         {
             "matches": "RomanticTableContainer:LightCandle",
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
                     "sound": "ship/LightCandle.ogg"
@@ -129,31 +138,14 @@
         },
         {
             "matches": "RomanticTableContainer:LightCandleBlow",
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
                     "sound": "ship/LightCandleBlow.ogg"
-                }
-            ]
-        },
-        {
-            "matches": [
-                "storage door:MetalHatchClose",
-                "StorageShelfContainer:MetalHatchClose"
-            ],
-            "sounds": [
-                {
-                    "sound": "ship/MetalHatchClose.ogg"
-                }
-            ]
-        },
-        {
-            "matches": [
-                "StorageShelfContainer:MetalHatchOpen",
-                "storage door:MetalHatchOpen"
-            ],
-            "sounds": [
-                {
-                    "sound": "ship/MetalHatchOpen.ogg"
                 }
             ]
         },
@@ -263,6 +255,11 @@
         },
         {
             "matches": "TelevisionContainer:TurnTVOff",
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
                     "sound": "ship/TurnTVOff.ogg"
@@ -271,6 +268,11 @@
         },
         {
             "matches": "TelevisionContainer:TurnTVOn",
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
                     "sound": "ship/TurnTVOn.ogg"

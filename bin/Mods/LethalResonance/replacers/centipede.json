@@ -20,6 +20,11 @@
         },
         {
             "matches": "Centipede:ClingToPlayer",
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
                     "sound": "centipede/ClingToPlayer.ogg"

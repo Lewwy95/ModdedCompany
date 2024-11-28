@@ -52,10 +52,20 @@
                 },
                 {
                     "sound": "forest_keeper/FGiantEatPlayerSFX_2.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 },
                 {
                     "sound": "forest_keeper/FGiantEatPlayerSFX_3.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 }
             ]
@@ -117,6 +127,11 @@
         },
         {
             "matches": "ForestGiant:StunGiant",
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
                     "sound": "forest_keeper/StunGiant_1.ogg",
@@ -124,10 +139,20 @@
                 },
                 {
                     "sound": "forest_keeper/StunGiant_2.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 },
                 {
                     "sound": "forest_keeper/StunGiant_3.ogg",
+					"condition": {
+						"type": "config",
+						"config": "A_Options:Performance_Mode",
+						"value": false
+					},
                     "weight": 1
                 }
             ]

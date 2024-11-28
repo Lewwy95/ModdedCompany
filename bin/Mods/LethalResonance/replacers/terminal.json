@@ -49,6 +49,11 @@
         },
         {
             "matches": "TerminalAudio:TerminalAlarm",
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
                     "sound": "terminal/TerminalAlarm.ogg"

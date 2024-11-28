@@ -12,6 +12,11 @@
                 "TragedyMask:MaskComedyAttach",
                 "ComedyMask:MaskComedyAttach"
             ],
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
                     "sound": "masked/MaskComedyAttach.ogg"

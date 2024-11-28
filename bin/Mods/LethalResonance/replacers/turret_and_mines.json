@@ -9,6 +9,11 @@
     "replacements": [
         {
             "matches": "Landmine:MineBeep",
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
                     "sound": "turret_and_mines/MineBeep.ogg"
@@ -30,7 +35,7 @@
             "matches": "Landmine:MineDetonateDistance",
             "sounds": [
                 {
-                    "sound": "turret_and_mines/MineDetonateDistance.ogg"
+                    "sound": "turret_and_mines/MineDetonateDistancePS.ogg"
                 }
             ]
         },
@@ -94,6 +99,11 @@
                 "BulletCollisions:TurretWallHits",
                 "TurretContainer:TurretWallHits"
             ],
+			"condition": {
+				"type": "config",
+				"config": "A_Options:Performance_Mode_Extras",
+				"value": false
+			},
             "sounds": [
                 {
                     "sound": "turret_and_mines/TurretWallHits.ogg"
