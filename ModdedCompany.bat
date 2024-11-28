@@ -88,20 +88,20 @@ call "%~dp0\Uninstall.bat"
 echo Installing mods...
 if not exist "%~dp0..\BepInEx" (
     :: Create the core folders and move the files
-    mkdir "%~dp0..\BepInEx"
-    mkdir "%~dp0..\BepInEx\config"
-    mkdir "%~dp0..\BepInEx\config\MoreSuitsConfig"
-    mkdir "%~dp0..\BepInEx\core"
-    mkdir "%~dp0..\BepInEx\patchers"
+    powershell -c "Expand-Archive '%~dp0\bin\Mods\BepInEx.zip' -Force '%~dp0\bin\Temp'"
+    xcopy /s /y "%~dp0\bin\Temp\BepInEx\BepInEx\*" "%~dp0..\BepInEx"
+    timeout /t 2 /nobreak >nul
+
+    :: Make unique mod and dependency folders
     mkdir "%~dp0..\BepInEx\patchers\FixPluginTypesSerialization"
-    mkdir "%~dp0..\BepInEx\plugins"
+    mkdir "%~dp0..\BepInEx\config\MoreSuitsConfig"
     mkdir "%~dp0..\BepInEx\plugins\moresuits"
     mkdir "%~dp0..\BepInEx\plugins\Assets"
     mkdir "%~dp0..\BepInEx\plugins\LethalResonance"
     mkdir "%~dp0..\BepInEx\plugins\CSync"
-    pause
-    powershell -c "Expand-Archive '%~dp0\bin\Mods\BepInEx.zip' -Force '%~dp0\bin\Temp'"
-    xcopy /s /y "%~dp0\bin\Temp\BepInEx\BepInEx\*" "%~dp0..\BepInEx"
+    timeout /t 2 /nobreak >nul
+
+    :: Copy mods and dependencies over
     xcopy /s /y "%~dp0\bin\Configs\*" "%~dp0..\BepInEx\config"
     xcopy /s /y "%~dp0\bin\Mods\*.dll" "%~dp0..\BepInEx\plugins"
     xcopy /s /y "%~dp0\bin\Mods\moresuits\*" "%~dp0..\BepInEx\plugins\moresuits"
