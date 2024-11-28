@@ -89,7 +89,7 @@ echo Installing mods...
 if not exist "%~dp0..\BepInEx" (
     :: Create the core folders and move the files
     powershell -c "Expand-Archive '%~dp0\bin\Mods\BepInEx.zip' -Force '%~dp0\bin\Temp'"
-    xcopy /f /y "%~dp0\bin\Temp\BepInEx\BepInEx\*" "%~dp0..\BepInEx"
+    xcopy /s /y /i "%~dp0\bin\Temp\BepInEx\BepInEx\*" "%~dp0..\BepInEx"
     timeout /t 2 /nobreak >nul
 
     :: Make unique mod and dependency folders
@@ -102,14 +102,14 @@ if not exist "%~dp0..\BepInEx" (
     timeout /t 2 /nobreak >nul
 
     :: Copy mods and dependencies over
-    xcopy /f /y "%~dp0\bin\Configs\*" "%~dp0..\BepInEx\config"
-    xcopy /f /y "%~dp0\bin\Mods\*.dll" "%~dp0..\BepInEx\plugins"
-    xcopy /f /y "%~dp0\bin\Mods\moresuits\*" "%~dp0..\BepInEx\plugins\moresuits"
-    xcopy /f /y "%~dp0\bin\Mods\Assets\*" "%~dp0..\BepInEx\plugins\Assets"
-    xcopy /f /y "%~dp0\bin\Mods\LethalResonance\*" "%~dp0..\BepInEx\plugins\LethalResonance"
-    xcopy /f /y "%~dp0\bin\Mods\CSync\*" "%~dp0..\BepInEx\plugins\CSync"
-    xcopy /f /y "%~dp0\bin\Core\*" "%~dp0..\BepInEx\core"
-    xcopy /f /y "%~dp0\bin\Patchers\*" "%~dp0..\BepInEx\patchers"
+    xcopy /s /y /i "%~dp0\bin\Configs\*" "%~dp0..\BepInEx\config"
+    xcopy /s /y /i "%~dp0\bin\Mods\*.dll" "%~dp0..\BepInEx\plugins"
+    xcopy /s /y /i "%~dp0\bin\Mods\moresuits\*" "%~dp0..\BepInEx\plugins\moresuits"
+    xcopy /s /y /i "%~dp0\bin\Mods\Assets\*" "%~dp0..\BepInEx\plugins\Assets"
+    xcopy /s /y /i "%~dp0\bin\Mods\LethalResonance\*" "%~dp0..\BepInEx\plugins\LethalResonance"
+    xcopy /s /y /i "%~dp0\bin\Mods\CSync\*" "%~dp0..\BepInEx\plugins\CSync"
+    xcopy /s /y /i "%~dp0\bin\Core\*" "%~dp0..\BepInEx\core"
+    xcopy /s /y /i "%~dp0\bin\Patchers\*" "%~dp0..\BepInEx\patchers"
     copy "%~dp0\bin\Temp\BepInEx\doorstop_config.ini" "%~dp0..\"
     copy "%~dp0\bin\Temp\BepInEx\winhttp.dll" "%~dp0..\"
 )
