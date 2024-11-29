@@ -1,0 +1,28 @@
+{
+    "randomness": {
+      "type": "determinstic"
+    },
+    "replacements": [
+      {
+        "matches": "ButlerEnemy:CreatureSFX:ButlerUntuckKnifeSFX",
+        "sounds": [
+          {
+            "sound": "british_butler/butlerSFX1.ogg",
+            "weight": 1
+          },
+          {
+            "sound": "british_butler/butlerSFX2.ogg",
+            "weight": 1
+          },
+          {
+            "sound": "british_butler/butlerSFX3.ogg",
+            "weight": 1
+          },
+          {
+            "sound": "british_butler/butlerSFX4.ogg",
+            "weight": 1
+          }
+        ]
+      }
+    ]
+  }

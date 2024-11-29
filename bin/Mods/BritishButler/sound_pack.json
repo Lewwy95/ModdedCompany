@@ -1,0 +1,9 @@
+{
+    "name": "AngryBritishButler",
+    "config": {
+      "EnabledSounds:british_butler_music": {
+        "description": "Play music for the butler's chase",
+        "default": true
+      }
+    }
+}

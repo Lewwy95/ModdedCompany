@@ -82,6 +82,7 @@ if not exist "%~dp0..\BepInEx" (
     mkdir "%~dp0..\BepInEx\plugins\resAdditionalSuits"
     mkdir "%~dp0..\BepInEx\plugins\Assets"
     mkdir "%~dp0..\BepInEx\plugins\LethalResonance"
+    mkdir "%~dp0..\BepInEx\plugins\BritishButler"
 
     :: Copy mods and dependencies over
     xcopy /s /y /i "%~dp0\bin\Configs\*" "%~dp0..\BepInEx\config"
@@ -89,6 +90,7 @@ if not exist "%~dp0..\BepInEx" (
     xcopy /s /y /i "%~dp0\bin\Mods\resAdditionalSuits\*" "%~dp0..\BepInEx\plugins\resAdditionalSuits"
     xcopy /s /y /i "%~dp0\bin\Mods\Assets\*" "%~dp0..\BepInEx\plugins\Assets"
     xcopy /s /y /i "%~dp0\bin\Mods\LethalResonance\*" "%~dp0..\BepInEx\plugins\LethalResonance"
+    xcopy /s /y /i "%~dp0\bin\Mods\BritishButler\*" "%~dp0..\BepInEx\plugins\BritishButler"
     xcopy /s /y /i "%~dp0\bin\Core\*" "%~dp0..\BepInEx\core"
     copy "%~dp0\bin\Temp\BepInEx\doorstop_config.ini" "%~dp0..\"
     copy "%~dp0\bin\Temp\BepInEx\winhttp.dll" "%~dp0..\"

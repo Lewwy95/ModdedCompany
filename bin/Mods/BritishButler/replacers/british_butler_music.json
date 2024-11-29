@@ -1,0 +1,16 @@
+{
+    "condition": {
+      "type": "config",
+      "config": "EnabledSounds:british_butler_music"
+    },
+    "replacements": [
+      {
+        "matches": "Ambience2:ButlerMurderTheme",
+        "sounds": [
+          {
+            "sound": "british_butler/LondonTheme.ogg"
+          }
+        ]
+      }
+    ]
+  }
