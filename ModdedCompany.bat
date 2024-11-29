@@ -128,6 +128,7 @@ echo - LETHALRESONANCE>> modlist.txt
 echo - Mimics>> modlist.txt
 echo - MoreBlood>> modlist.txt
 echo - MoreCompany>> modlist.txt
+echo - NoPenaltyReimagined>> modlist.txt
 echo - QuickRestart>> modlist.txt
 echo - QuotaRollover>> modlist.txt
 echo - ReservedFlashlightSlot>> modlist.txt
