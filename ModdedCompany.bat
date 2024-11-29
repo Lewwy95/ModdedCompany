@@ -79,11 +79,9 @@ if not exist "%~dp0..\BepInEx" (
     xcopy /s /y /i "%~dp0\bin\Temp\BepInEx\BepInEx\*" "%~dp0..\BepInEx"
 
     :: Make unique mod and dependency folders
-    mkdir "%~dp0..\BepInEx\patchers\FixPluginTypesSerialization"
     mkdir "%~dp0..\BepInEx\plugins\resAdditionalSuits"
     mkdir "%~dp0..\BepInEx\plugins\Assets"
     mkdir "%~dp0..\BepInEx\plugins\LethalResonance"
-    mkdir "%~dp0..\BepInEx\plugins\CSync"
 
     :: Copy mods and dependencies over
     xcopy /s /y /i "%~dp0\bin\Configs\*" "%~dp0..\BepInEx\config"
@@ -91,9 +89,7 @@ if not exist "%~dp0..\BepInEx" (
     xcopy /s /y /i "%~dp0\bin\Mods\resAdditionalSuits\*" "%~dp0..\BepInEx\plugins\resAdditionalSuits"
     xcopy /s /y /i "%~dp0\bin\Mods\Assets\*" "%~dp0..\BepInEx\plugins\Assets"
     xcopy /s /y /i "%~dp0\bin\Mods\LethalResonance\*" "%~dp0..\BepInEx\plugins\LethalResonance"
-    xcopy /s /y /i "%~dp0\bin\Mods\CSync\*" "%~dp0..\BepInEx\plugins\CSync"
     xcopy /s /y /i "%~dp0\bin\Core\*" "%~dp0..\BepInEx\core"
-    xcopy /s /y /i "%~dp0\bin\Patchers\*" "%~dp0..\BepInEx\patchers"
     copy "%~dp0\bin\Temp\BepInEx\doorstop_config.ini" "%~dp0..\"
     copy "%~dp0\bin\Temp\BepInEx\winhttp.dll" "%~dp0..\"
 )
@@ -123,7 +119,6 @@ cls
 if exist "%~dp0\modlist.txt" del /s /q "%~dp0\modlist.txt"
 echo Creating mods text file...
 echo - AdditionalSuits>> modlist.txt
-echo - CustomDeathPenalty>> modlist.txt
 echo - FasterItemDropship>> modlist.txt
 echo - Helmet Cameras>> modlist.txt
 echo - HideChat>> modlist.txt
