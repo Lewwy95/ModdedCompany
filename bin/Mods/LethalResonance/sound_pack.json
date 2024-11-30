@@ -235,7 +235,7 @@
         },
         "EnabledSounds:apparatus": {
             "description": "Enable LR apparatus sounds?",
-            "default": true
+            "default": false
         }
     }
 }

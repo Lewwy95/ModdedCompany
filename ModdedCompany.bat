@@ -68,10 +68,10 @@ powershell -c "(Invoke-WebRequest -URI 'https://raw.githubusercontent.com/Lewwy9
 cls
 
 :: Uninstall All Mods
+:install
 call "%~dp0\Uninstall.bat"
 
 :: Move New Mods
-:install
 echo Installing mods...
 if not exist "%~dp0..\BepInEx" (
     :: Create the core folders and move the files
